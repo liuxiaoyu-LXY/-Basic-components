@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    ;
+}
+#shengbei{
+    background-color: gray;
+    height: 300px;
+    /* width: 100%; */
+    padding:0 300px 0 200px;
+}
+#shengbei #center {
+    float: left;
+    width: 100%;
+    height: 300px;
+    background-color: yellow;
+   
+
+}
+#shengbei #left{
+    float: left;
+    width: 200px;
+    height: 300px;
+    background-color: red;
+    margin-left: -100%;
+    position:relative;
+    left:-200px;
+    
+}
+#shengbei #right{
+    float: left;
+    width: 300px;
+    height: 300px;
+    background-color: green;
+    margin-left: -300px;
+    position:relative;
+    right: -300px;
+}
+
+.son{
+    height: 300px;
+}
+.doublefly{
+    background-color: gray;
+  height: 300px;
+    width: 100%;
+    
+}
+.doublefly .center{
+    background-color: yellow;
+    float:left;
+    width: 100%;
+
+}
+.doublefly .center-content{
+    margin:0 300px 0 200px;
+    background-color: orange;
+    text-align: center;
+    
+}
+.doublefly .left{
+    background-color: red;
+    float: left;
+    width: 200px;
+    margin-left: -100%;
+}
+.doublefly .right{
+    background-color: green;
+    float: left;
+    width: 300px;
+    margin-left: -300px;
+    
+}
+.row{
+
+    height: 30px;
+    background-color: gray;
+}

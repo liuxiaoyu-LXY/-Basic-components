@@ -1,0 +1,149 @@
+body {
+    height: 5000px;
+}
+.triangle{
+    width: 0px;
+    height: 0px;
+    border:100px solid red;
+    border-left-color:transparent;
+    border-right-color:transparent;
+    border-bottom:None;
+}
+.float{
+    width: 200px;
+    height: 300px;
+    border:3px solid red;
+   
+ 
+
+}
+.float.div1{
+    height: 200px;
+    float:left;
+    border-color:green;
+    
+
+}
+.div2{
+    height: 200px;
+   /* overflow: hidden; */
+   margin-left: 200px;
+    /* width: 100%; */
+    height: 200px;
+    background-color: red;
+}
+    
+.float.div3{
+    height: 200px;
+    float:left;
+    border-color:green;
+    
+}
+.float.div4{
+    height: 200px;
+    float:left;
+    border-color:green;
+    
+}
+/* 浮动的container不设置高，那么float的元素不会把它撑起来 */
+.container{
+    /* width: 450px;
+    height: 400px; */
+    width: 100%
+    background-color: yellow;
+}
+.rush{
+    width: 300px;
+    height: 100px;
+    background-color: green;
+    /* vertical-align: middle; */
+    clear:both;
+    margin-top: 30px;
+    
+}
+.rush2{
+    width: 100px;
+    height: 90px;
+    background-color: red;
+    /* vertical-align: middle; */
+}
+
+.logo{
+    height: 80px;
+    width: 250px;
+    border:1px solid orange;
+    font-size:20px;
+    text-indent: 100%;
+    overflow: hidden;
+    background: url(../images/duck.png) no-repeat 0px 0px;
+}
+.taxian{
+    width: 200px;
+    height: 200px;
+    
+}
+
+.taxian.box1{
+    background-color: red;
+    margin-bottom: 50px;
+    display: inline-block;
+
+}
+.taxian.box2{
+    background-color: green;
+    margin-top: 30px;
+}
+.kong{
+    clear:both;
+    height: 0;
+}
+.normal{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+}
+.clear-float {
+    clear:both;
+}
+.duohangwenban {
+    font-size:30px;
+    color:red;
+    width: 300px;
+    height: 600px;
+    background-color: green;
+    line-height: 600px;
+   
+    
+}
+/* .duohangwenban img{
+    height: 200px;
+    width: 100%;
+    vertical-align: middle;
+} */
+
+.duohangwenban span {
+    width: 200px;
+    display: inline-block;
+    height: 300px;
+    background-color: orange;
+    overflow: hidden;
+    line-height: 100px;
+    vertical-align: middle;
+
+
+}
+.duohangwenban p{
+    width: 200px;
+    overflow:visible;
+    word-break: normal;
+    height: 400px;
+}
+.beij img{
+    vertical-align: middle;
+}
+.beij {
+    background-color: blue;
+    vertical-align: middle;
+    /* width: 400px;
+    height: 400px; */
+}
