@@ -1,3 +1,4 @@
+//这个和科里化有所不同，它不规定参数数组大小，只有在print的时候才会进行计算，所以为它的tostring方法进行重写
 function add(){
     var args = [...arguments];
     var fn=function(){
@@ -52,4 +53,24 @@ function fn(a,b,c){
 console.log(curryIt2(fn)(1,2)(3))
 console.log(curryIt2(fn)(1)(2)(3))
 
+//手写bind
+//1.实现上下文绑定
+//2. 传入参数实现预传递参数
 
+Function.prototype.mybind = function(...args){
+    let context = args.shift()
+    //使用args数组，避免了直接使用arguments需要用Array.prototype.slice.call进行操作，因为类数组无这些func
+    let self = this
+    return function(){
+        self.apply(context,[...args,...arguments])
+    }
+
+}
+function a(x,y,z){
+    console.log(x+y+z+this.num)
+}
+let obj = {num:2}
+let func = a.bind(obj,2)
+func(3,3)
+let func2 = a.mybind(obj,2)
+func(3,4)
